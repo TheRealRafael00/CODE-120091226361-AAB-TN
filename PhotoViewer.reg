@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities]
+"ApplicationDescription"="@%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll,-3069"
+"ApplicationName"="Windows Photo Viewer"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations]
+".jpg"="PhotoViewer.FileAssoc.Jpeg"
+".jpeg"="PhotoViewer.FileAssoc.Jpeg"
+".jpe"="PhotoViewer.FileAssoc.Jpeg"
+".jfif"="PhotoViewer.FileAssoc.Jpeg"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+"Windows Photo Viewer"="SOFTWARE\\Microsoft\\Windows Photo Viewer\\Capabilities"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg]
+"EditFlags"=dword:00010000
+"FriendlyTypeName"="@%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll,-3056"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg\DefaultIcon]
+@="%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll,-1"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg\shell\open\command]
+@="\"%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll\", ImageView_Fullscreen %1"
